@@ -3,7 +3,8 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
-  # a list of a collection
+  # a collection of something (eg. flats)
+  # is ALWAYS an index action by convention
+  root 'flats#index' # EXACTLY THE SAME AS LINE BELOW
   # get '/', to: 'flats#index', as: 'root'
-  root 'flats#index'
 end
